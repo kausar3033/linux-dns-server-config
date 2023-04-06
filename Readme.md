@@ -19,7 +19,7 @@
 
         options {
         
-                directory "/var/cache/bind";
+                directory '/var/cache/bind';
         
                 recursion yes;
                 allow-query { trustedclients; };
@@ -55,9 +55,9 @@
                 file "/etc/bind/db.ibos.io";
         };
 
-        zone "2.168.192.in-addr.arpa" {
+        zone '2.168.192.in-addr.arpa' {
                 type master;
-                file "/etc/bind/db.192.168.2";
+                file '/etc/bind/db.192.168.2';
         };" >> named.conf.local
 
 
